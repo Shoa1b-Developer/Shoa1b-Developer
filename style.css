@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+
+body {
+    font-size: 15pt;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lexend Tera', sans-serif;
+}
+nav {
+  width:100%;
+  height: 50px;
+  background-color:black;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+#navi {
+  padding: 20px;
+  font-size: 24px;
+  color: white;
+  position: relative;
+  top: 10px;
+}
+#navi:hover {
+  background-color: #FFAA23;
+}
+
+.background {
+  background-image: url(3506328.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2px;
+  filter: grayscale(15%);
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 25px;
+  text-shadow:4px 2px #FFAA23;
+}
+span {
+  font-size:20px;
+  color:black;
+}
+a i {
+  animation: bounce 1s infinite;
+}
+/*############### about ###########*/
+#about {
+  width: 95%;
+  font-size: 16px;
+  margin: auto;
+}
+#about img {
+  width:30%;
+  border-radius: 100%;
+}
+.line {
+  width:100%;
+  margin: auto;
+  height: 20px;
+  background-color: #FFAA23;
+  margin-top:-50px;
+}
+.btn {
+  padding: 15px;
+  display: block;
+  margin: auto;
+  background: transparent;
+  border:solid 2px #FFAA23;
+}
+.btn:hover {
+  animation: big .5s forwards;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.column {
+  text-align: center;
+  border: solid 2px #FFAA23;
+  margin: 10px;
+  line-height: 1.5;
+}
+li {
+  list-style: none;
+}
+.btnn {
+  border-radius: 20px;
+  background-color: #FFAA23;
+}
+/*########## footer ##########*/
+#contact {
+  text-align: center;
+  background-color: black;
+  font-size: 10px;
+  margin-bottom: -10px;
+}
+#contact p {
+  color: white;
+}
+.fa-instagram,
+.fa-twitter,
+.fa-github,
+.fa-codepen {
+  color: white;
+  padding: 10px;
+}
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-codepen:hover {
+  background-color: #FFAA23;
+}
+.social {
+  font-size: 30px;
+  text-align: center;
+}
+/*############ animations ##########*/
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform(translateY:-10px);
+  }
+}
+
+
+@keyframes big {
+  0% {
+    padding: 15px;
+  }
+
+  100% {
+    padding: 18px;
+  }
+}
+/*############ mobile ############*/
+@media (max-width: 680px) {
+  #navi {
+    font-size: 18px;
+    display: inline;
+    padding:0;
+    float: none;
+    text-align: center;
+    padding: 14px;
+  }
+  h2 {
+  
+  }
+  .prices {
+    display: flex;
+    flex-direction: column;
+  }
+}
